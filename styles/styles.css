@@ -281,12 +281,9 @@ img {
 /* псевдоэлементы */
 .features.list {
   display: flex;
-  /* padding: 0;
-  list-style: none; */
 }
 
 .features.list .item {
-  /* height: 120px; */
   width: 270px;
 }
 
@@ -382,6 +379,16 @@ img {
   color: var(--text-color);
 }
 /* / Наша команда */
+
+/* Постоянные клиенты */
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+/* / Постоянные клиенты */
 
 /* Футер */
 .contacts.list {
