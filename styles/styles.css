@@ -160,7 +160,7 @@ img {
   text-decoration: none;
 }
 
-/* псевдоэлементы */
+/* псевдоэлементы
 .text-envelope {
   display: inline-flex;
   align-items: center;
@@ -187,7 +187,7 @@ img {
   margin-right: 10px;
   background-image: url("../images/work-img/smartphone.svg");
   background-size: contain;
-}
+} */
 
 /* /Шапка сайта */
 
@@ -278,7 +278,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-/* псевдоэлементы */
+/* псевдоэлементы
 .features.list {
   display: flex;
 }
@@ -311,7 +311,7 @@ img {
 }
 .icon-astronaut::before {
   background-image: url("../images/work-img/astronaut.svg");
-}
+} */
 
 /* / Особенности  */
 
@@ -381,13 +381,13 @@ img {
 /* / Наша команда */
 
 /* Постоянные клиенты */
-.clients-list {
+/* .clients-list {
   display: flex;
 }
 
 .clients-list .item + .item {
   margin-left: 30px;
-}
+} */
 /* / Постоянные клиенты */
 
 /* Футер */
