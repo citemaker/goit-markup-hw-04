@@ -152,42 +152,34 @@ img {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-.text-envelope.link,
-.text-phone.link {
+.text.link,
+.text.link {
   font-weight: 500;
   line-height: 1.14;
   color: var(--text-color);
   text-decoration: none;
 }
-
-/* псевдоэлементы
-.text-envelope {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
+/* sprite */
+#svg-sprite {
+  display: none;
 }
-.text-envelope::before {
-  content: "";
-  height: 12px;
+
+.icon-flex {
+  display: flex;
+  padding: 20px;
+}
+
+.icon {
   width: 16px;
+  height: 12px;
   margin-right: 10px;
-  background-image: url("../images/work-img/envelope.svg");
-  background-size: contain;
-}
-.text-phone {
-  display: inline-flex;
-  align-items: center;
   cursor: pointer;
+  fill: var(--text-color);
 }
-
-.text-phone::before {
-  content: "";
-  height: 16px;
-  width: 10px;
-  margin-right: 10px;
-  background-image: url("../images/work-img/smartphone.svg");
-  background-size: contain;
-} */
+.icon:hover {
+  stroke: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 /* /Шапка сайта */
 
@@ -257,6 +249,57 @@ img {
 .title-none {
   display: none;
 }
+/*  вектор как background-image*/
+.icon-antenna {
+  height: 120px;
+  width: 270px;
+  background: var(--bg-second);
+  border-radius: 4px;
+  background-image: url('../images/work-img/antenna.svg'),
+    
+
+  background-size: 70px cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}
+.icon-clock {
+  display: inline-flex;
+  height: 120px;
+  width: 270px;
+  padding: 25px 100px;
+  background: var(--bg-second);
+  border-radius: 4px;
+  background-image: url('../images/work-img/clock.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-diagram {
+  display: inline-flex;
+  height: 120px;
+  width: 270px;
+  /* padding: 25px 100px; */
+  background: var(--bg-second);
+  border-radius: 4px;
+  background-image: url("../images/work-img/diagram.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-astronaut {
+  display: inline-flex;
+  height: 120px;
+  width: 270px;
+  background: var(--bg-second);
+  border-radius: 4px;
+  background-image: url("../images/work-img/astronaut.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .features-title {
   margin-top: 0;
@@ -278,6 +321,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 /* псевдоэлементы
 .features.list {
   display: flex;
