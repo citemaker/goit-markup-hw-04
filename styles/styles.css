@@ -322,40 +322,37 @@ img {
   color: var(--text-color);
 }
 
-/* псевдоэлементы
-.features.list {
+/*  вектор инлайн*/
+#svg-sprite {
+  display: none;
+}
+
+.test-icon {
   display: flex;
-}
-
-.features.list .item {
   width: 270px;
-}
-
-.features.list .item::before {
-  content: "";
-  display: block;
-  margin-bottom: 30px;
   height: 120px;
-  background-size: contain 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 30px;
   background-color: var(--bg-second);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
-
-.icon-antenna::before {
-  background-image: url("../images/work-img/antenna.svg");
+.icon-antenna {
+  width: 70px;
+  height: 70px;
 }
-
-.icon-clock::before {
-  background-image: url("../images/work-img/clock.svg");
+.icon-clock {
+  width: 70px;
+  height: 70px;
 }
-
-.icon-diagram::before {
-  background-image: url("../images/work-img/diagram.svg");
+.icon-diagram {
+  width: 70px;
+  height: 70px;
 }
-.icon-astronaut::before {
-  background-image: url("../images/work-img/astronaut.svg");
-} */
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
 
 /* / Особенности  */
 
