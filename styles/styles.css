@@ -166,7 +166,7 @@ img {
   display: none;
 }
 
-.text.link{
+.text.link {
   display: flex;
   padding: 20px;
   /* padding-top: 32px;
@@ -174,23 +174,22 @@ img {
   color: var(--text-color);
 }
 
-
-
 .icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   cursor: pointer;
-   fill: currentColor;
+  fill: currentColor;
 }
 .text.link:hover .icon {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 /* /Шапка сайта */
 
 /* Герой */
 .hero {
   min-height: 600px;
+  /* min-width: 1600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 252px;
@@ -203,8 +202,9 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/work-img/hero-bg.jpg");
+    url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -260,13 +260,11 @@ img {
   width: 270px;
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url('../images/work-img/antenna.svg'),
-    
+  background-image: url("../images/sprite.svg#antenna.svg");
 
-  background-size: 70px cover;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
-}
 }
 .icon-clock {
   display: inline-flex;
@@ -275,7 +273,7 @@ img {
   padding: 25px 100px;
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url('../images/work-img/clock.svg');
+  background-image: url("../images/sprite.svg#clock.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -285,7 +283,7 @@ img {
   display: inline-flex;
   height: 120px;
   width: 270px;
-  /* padding: 25px 100px; */
+
   background: var(--bg-second);
   border-radius: 4px;
   background-image: url("../images/work-img/diagram.svg");
@@ -342,11 +340,10 @@ img {
   justify-content: center;
   align-items: center;
 }
-.icon-antenna, 
-.icon-clock, 
-.icon-diagram, 
-.icon-astronaut
- {
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
   width: 70px;
   height: 70px;
 }
@@ -407,7 +404,7 @@ img {
 
 .team .text {
   margin-top: 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   font-size: 16px;
   font-style: normal;
@@ -416,6 +413,46 @@ img {
   text-align: center;
   color: var(--text-color);
 }
+/* Спрайт соцсети команды */
+.team-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: var(--bg-primary);
+  cursor: pointer;
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.social-icons {
+  display: flex;
+}
+
+/*/ Спрайт соцсети команды */
+
 /* / Наша команда */
 
 /* Постоянные клиенты */
@@ -443,8 +480,8 @@ img {
 
 .clients-box:hover {
   color: rgba(33, 150, 243, 1);
-  /* border: 1px solid rgba(33, 150, 243, 1) */
 }
+
 .clients-box-icon {
   fill: currentColor;
 }
@@ -618,6 +655,10 @@ img {
   overflow: hidden;
   text-decoration: none;
 }
+
+.card.link:hover {
+  box-shadow: var(--card-shadow);
+}
 .card-thumb {
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-top: 1px solid rgba(238, 238, 238, 1);
@@ -625,8 +666,15 @@ img {
 }
 
 .card-content {
-  padding: 20px 24px;
+  padding: 20px 24px 16px;
   border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+
+.none-border-bottom {
+  padding: 20px 24px 16px;
+  /* border-bottom: 1px solid rgba(238, 238, 238, 1); */
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
 }
