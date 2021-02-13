@@ -166,16 +166,16 @@ img {
   display: none;
 }
 
-.icon-flex {
+.text.link{
   display: flex;
   padding: 20px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
   color: var(--text-color);
 }
 
-.icon-flex:hover {
-  color: rgba(33, 150, 243, 1);
 
-}
+
 .icon {
   width: 16px;
   height: 12px;
@@ -183,10 +183,9 @@ img {
   cursor: pointer;
    fill: currentColor;
 }
-/* .icon:hover {
-
-} */
-
+.text.link:hover .icon {
+  color: var(--accent-color)
+}
 /* /Шапка сайта */
 
 /* Герой */
