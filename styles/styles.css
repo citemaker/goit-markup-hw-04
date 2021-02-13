@@ -169,19 +169,23 @@ img {
 .icon-flex {
   display: flex;
   padding: 20px;
+  color: var(--text-color);
 }
 
+.icon-flex:hover {
+  color: rgba(33, 150, 243, 1);
+
+}
 .icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   cursor: pointer;
-  fill: var(--text-color);
+   fill: currentColor;
 }
-.icon:hover {
-  stroke: var(--accent-color);
-  fill: var(--accent-color);
-}
+/* .icon:hover {
+
+} */
 
 /* /Шапка сайта */
 
@@ -416,36 +420,10 @@ img {
 /* / Наша команда */
 
 /* Постоянные клиенты */
-/* .clients-list {
-  display: flex;
-  margin-bottom: 50px;
-
-} */
-
-/* .client {
-  width: 170px;
-  height: 90px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  /* background-color: var(--bg-second); */
-  /* border-radius: 4px;
-  background-position: center;
-  justify-content: center;
-  align-items: center; */
-} */
-
-/* .clients-list .item + .item {
-margin-left: 10px;
-} */
-/* 
-.clients-icon:hover {
-  background-color: rgba(33, 150, 243, 1);
-
-} */
 
 /* новое цсс */
 .clients-list.list {
   display: flex;
-  /* justify-content: space-between; */
   padding: 0;
   list-style: none;
 }
@@ -470,7 +448,6 @@ margin-left: 10px;
 .clients-box-icon {
   fill: currentColor;
 }
-
 
 /* / Постоянные клиенты */
 
