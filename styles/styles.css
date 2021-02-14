@@ -260,23 +260,22 @@ img {
   width: 270px;
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url("../images/sprite.svg#antenna.svg");
+  /* background-image: url("../images/sprite.svg#antenna.svg");
 
   background-size: 70px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .icon-clock {
   display: inline-flex;
   height: 120px;
   width: 270px;
-  padding: 25px 100px;
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url("../images/sprite.svg#clock.svg");
+  /* background-image: url("../images/sprite.svg#icon-clock");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .icon-diagram {
@@ -286,10 +285,10 @@ img {
 
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url("../images/work-img/diagram.svg");
+  /* background-image: url("../images/work-img/diagram.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .icon-astronaut {
@@ -298,10 +297,10 @@ img {
   width: 270px;
   background: var(--bg-second);
   border-radius: 4px;
-  background-image: url("../images/work-img/astronaut.svg");
+  /* background-image: url("../images/work-img/astronaut.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .features-title {
