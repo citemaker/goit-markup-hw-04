@@ -25,12 +25,6 @@
   --card-set-gap: 30px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   /* background: var(--bg-primary); */
   color: var(--title-color);
@@ -161,23 +155,22 @@ img {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-.text.link,
-.text.link {
-  font-weight: 500;
-  line-height: 1.14;
-  color: var(--text-color);
-  text-decoration: none;
-}
+
 /* sprite */
 #svg-sprite {
   display: none;
 }
 
+.text.link,
 .text.link {
   display: flex;
   align-items: center;
   padding: 20px;
+
+  font-weight: 500;
+  line-height: 1.14;
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .icon-evelope {
@@ -192,14 +185,18 @@ img {
 
 .icon-evelope,
 .icon-smartphone {
-  /* width: 10px;
-  height: 16px; */
   margin-right: 10px;
   cursor: pointer;
   fill: currentColor;
 }
-.text.link:hover .icon,
-.text.link:hover .icon {
+
+.text.link:hover .icon-evelope,
+.text.link:hover .icon-smartphone {
+  color: var(--accent-color);
+}
+
+.text.link:focus .icon-evelope,
+.text.link:focus .icon-smartphone {
   color: var(--accent-color);
 }
 /* /Шапка сайта */
