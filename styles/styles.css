@@ -97,6 +97,8 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+
+  min-height: 80px;
 }
 
 .nav {
@@ -131,8 +133,8 @@ img {
 
 .site-nav .link,
 .contact-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -157,20 +159,20 @@ img {
 }
 
 /* sprite */
-#svg-sprite {
+/* #svg-sprite {
   display: none;
-}
+} */
 
 .text.link,
 .text.link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  padding: 20px;
 
   font-weight: 500;
   line-height: 1.14;
   color: var(--text-color);
   text-decoration: none;
+  /* outline: 1px solid tomato; */
 }
 
 .icon-evelope {
@@ -515,12 +517,6 @@ img {
 
 .clients-box-icon {
   fill: currentColor;
-}
-/* 
-.clients-box-icon:focus {
-   color: rgba(33, 150, 243, 1);
-  border-color: rgba(33, 150, 243, 1);
-} */
 }
 
 /* / Постоянные клиенты */
