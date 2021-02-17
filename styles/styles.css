@@ -174,11 +174,13 @@ img {
 }
 
 .icon-evelope {
+  display: block;
   height: 12px;
   width: 16px;
 }
 
 .icon-smartphone {
+  display: block;
   height: 16px;
   width: 10px;
 }
@@ -513,6 +515,12 @@ img {
 
 .clients-box-icon {
   fill: currentColor;
+}
+/* 
+.clients-box-icon:focus {
+   color: rgba(33, 150, 243, 1);
+  border-color: rgba(33, 150, 243, 1);
+} */
 }
 
 /* / Постоянные клиенты */
